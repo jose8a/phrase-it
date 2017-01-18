@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="static/main.css" title="main" type="text/css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">Phrase Guess</div>
+      <div class="spacer"></div>
+      <div class="navigation">New Game</div>
+    </div><!-- END:HEADER -->
+
+    <div class="container-main">
+      <div class="main-options">
+        <!-- GAMEOPTIONS -->
+        <div class="option-item">Option1</div>
+        <div class="option-item">Option2</div>
+        <div class="option-item">Option3</div>
+        <div class="option-item">Option4</div>
+        <div class="option-item">Option5</div>
+      </div><!-- END:MAIN-OPTIONS -->
+      <div id="game" class="main-board">
+        <div class="board-game-display">
+          <messages></messages>
+          <display-viz></display-viz>
+          <display-phrase></display-phrase>
+        </div><!-- END:BOARD-GAME-DISPLAY -->
+
+        <div class="board-game-letters">
+          <div class="container-missed">
+            <div class="title">Misses</div>
+            <letters-missed></letters-missed>
+          </div>
+          <div class="container-remaining">
+            <div class="title">Available Letters</div>
+            <letters-remaining></letters-remaining>
+          </div>
+        </div><!-- END:BOARD-GAME-LETTERS -->
+      </div><!-- END:MAIN-GAME -->
+    </div><!-- END:MAIN-CONTAINER -->
+
+    <div class="footer">
+      <div class="logo">Phrase Guess</div>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.js"></script>
+    <script defer src="https://unpkg.com/vuex"></script>
+    <script defer src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+    <script defer src="src/hangman.js"></script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+:root {
+  --bg1-color: #ccc;
+  --bg2-color: #ddf;
+  --sec-color: #555;
+  --accent-color: #22f;
+  --warn-color: #e55;
+  --danger-color: #f11;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #555;
+  background-color: var(--sec-color);
+  color: white;
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.logo {
+  font: italic 3.5em bolder;
+}
+
+.navigation {
+  padding: 15px;
+  background-color: #22f;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: #555;
+  background-color: var(--sec-color);
+  color: white;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px var(--bg2-color) solid;
+}
+
+.container-main {
+  background-color: #ccc;
+  background-color: var(--bg2-color);
+  height: 80vh;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-options {
+  background-color: #ccc;
+  background-color: var(--sec-color);
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-shrink: 0;
+  color: var(--sec-color);
+  border-top: 1px var(--bg2-color) solid;
+}
+
+.option-item {
+}
+
+.main-board{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.board-game-display {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-game-letters {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  justify-content: space-between;
+}
+
+.display-viz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 3;
+  height: 75%;
+}
+
+.viz-row {
+  display: flex;
+  height: 25%;
+}
+
+.square {
+  flex-grow: 1;
+  min-height: 60px;
+  min-width: 60px;
+  background-color: purple;
+  background-color: var(--warn-color);
+}
+
+.square2 {
+  flex-grow: 1;
+  min-height: 60px;
+  min-width: 60px;
+  background-color: red;
+  background-color: var(--danger-color);
+}
+
+.display-phrase .letter {
+  background-color: #eee;
+  background-color: var(--accent-color);
+}
+
+.display-phrase {
+  background-color: var(--bg2-color);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  height: 25%;
+}
+
+.title {
+  background-color: #335;
+  background-color: var(--sec-color);
+  color: white;
+  height: 20px;
+  text-align: center;
+  border: 1px var(--bg2-color) solid;
+}
+
+.message {
+  background-color: #335;
+  background-color: var(--sec-color);
+  color: white;
+  height: 20px;
+  border: 1px var(--bg2-color) solid;
+  padding-left: 5px;
+}
+
+.message:before {
+  content: " > ";
+}
+
+.letters-missed .letter {
+  background-color: #33d;
+  background-color: var(--warn-color);
+}
+
+.container-missed {
+  height: 35%;
+}
+.letters-missed {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  height: calc(100% - 20px);
+}
+
+.letters-remaining .letter {
+  background-color: #ddf;
+  background-color: var(--bg2-color);
+}
+
+.container-remaining {
+  height: 65%;
+}
+
+.letters-remaining {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  height: calc(100% - 20px);
+}
+
+.blank,
+.letter {
+  width: 50px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #444;
+  border-radius: 5px;
+  font-size: 2em;
+}
+
+.blank {
+  background-color: var(--bg1-color);
+}
+
+.letter.revealed {
+  background-color: #578;
+  opacity: 75%;
+  color: white;
+  mix-blend-mode: darken;
+}
+
+.whitespace {
+}
+
+.alpha {
+  background-color: #abc;
+  opacity: 75%;
+  color: white;
+  mix-blend-mode: screen;
+}
+
+
+
